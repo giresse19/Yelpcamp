@@ -15,10 +15,13 @@ var commentRoutes     = require("./routes/comments");
 var campgroundRoutes  = require("./routes/campgrounds");
 var indexRoutes       = require("./routes/index");
 
+
+
 var mongoose       = require("mongoose");
- //mongoose.connect("mongodb://localhost/yelp_camp_v11");
-mongoose.connect("mongodb://giresse:Nkongho18@ds127321.mlab.com:27321/yepcamp");
-// mongodb://giresse:Nkongho18@ds127321.mlab.com:27321/yepcamp
+mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://localhost/yelp_camp_v11");
+ //mongoose.connect("mongodb://giresse:Nkongho18@ds127321.mlab.com:27321/yepcamp");
+ 
 app.use(body_parser.urlencoded({extended:true }));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method")); // conventional 

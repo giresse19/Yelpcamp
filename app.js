@@ -14,13 +14,16 @@ var flash         = require("connect-flash");
 var commentRoutes     = require("./routes/comments");
 var campgroundRoutes  = require("./routes/campgrounds");
 var indexRoutes       = require("./routes/index");
+var mongoose          = require("mongoose");
 
 
-
-var mongoose       = require("mongoose");
-mongoose.connect(process.env.DATABASEURL);
-mongoose.connect("mongodb://localhost/yelp_camp_v11");
- //mongoose.connect("mongodb://giresse:Nkongho18@ds127321.mlab.com:27321/yepcamp");
+ // var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11";
+// mongoose.connect(url);
+ mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect("mongodb://localhost/yelp_camp_v11");
+// mongoose.connect("mongodb://giresse:Nkongho18@ds127321.mlab.com:27321/yepcamp");
+ 
+ 
  
 app.use(body_parser.urlencoded({extended:true }));
 app.set("view engine", "ejs");

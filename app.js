@@ -17,9 +17,9 @@ var indexRoutes       = require("./routes/index");
 var mongoose          = require("mongoose");
 
 
- // var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11";
-// mongoose.connect(url);
- mongoose.connect(process.env.DATABASEURL);
+ var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v11";
+ mongoose.connect(url);
+//  mongoose.connect(process.env.DATABASEURL);
 // mongoose.connect("mongodb://localhost/yelp_camp_v11");
 // mongoose.connect("mongodb://giresse:Nkongho18@ds127321.mlab.com:27321/yepcamp");
  

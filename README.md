@@ -9,5 +9,11 @@ the delete/edit button.
 the URl for the running application which is currently running can be found on my heroku account:
 https://young-everglades-39474.herokuapp.com
 
+|----Felling lazy to create an account---|
+Sign up with the :
+username: din
+password: din11
+TO SEE ALL THE FEATURES.
+
 
 
